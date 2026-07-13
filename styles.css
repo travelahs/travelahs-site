@@ -149,3 +149,19 @@ h2{font-size:clamp(29px,3vw,42px);line-height:1.1}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel-track{transition:none}}
+
+:focus-visible{outline:3px solid var(--accent-strong);outline-offset:4px}
+.carousel-slide:focus-visible{outline-offset:-6px}
+.carousel-slide img,.carousel-slide video{object-position:center center}
+.instagram-fallback{display:none;margin:0;color:var(--muted);text-align:center}
+.instagram-embed-wrap.embed-unavailable{min-height:auto;padding:28px;border:1px solid var(--line);background:var(--white)}
+.instagram-embed-wrap.embed-unavailable .instagram-media{display:none!important}
+.instagram-embed-wrap.embed-unavailable .instagram-fallback{display:block}
+@media(max-width:390px){
+  :root{--gutter:18px}
+  .hero h1{font-size:38px}
+  .email-link{font-size:23px;overflow-wrap:anywhere}
+  .hero-media figcaption,.portfolio-card figcaption,.landscape-caption,.lightbox-caption{gap:12px}
+  .carousel-arrow{width:34px;height:34px}
+}
+@media(prefers-reduced-motion:reduce){.carousel-track{transition:none}.video-frame video,.carousel-slide video{animation:none}}
